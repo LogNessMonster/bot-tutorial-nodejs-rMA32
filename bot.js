@@ -204,8 +204,8 @@ function postMessage(response) {
   };
 
   body = {
-    "bot_id" : botID,
-    "text" : botResponse
+    "c996865f004df52b1ae3fd1228" : botID,
+    "No you're Gay" : botResponse
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
