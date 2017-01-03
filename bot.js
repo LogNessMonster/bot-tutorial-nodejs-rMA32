@@ -204,7 +204,7 @@ function postMessage(response) {
   };
 
   body = {
-    "bot_id" : BOT_ID;
+    "bot_id" : BOT_ID,
     "Text" : botResponse
   };
 
