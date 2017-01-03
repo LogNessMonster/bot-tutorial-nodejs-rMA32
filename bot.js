@@ -4,7 +4,7 @@ var cool = require('cool-ascii-faces');
 var botID = process.env.BOT_ID;
 
 function respond() {
-  var request = JSON.parse(this.req.chunks[0]),
+  var request = JSON.parse(this.req.chunks[0]);
       botRegexcg = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
@@ -204,11 +204,11 @@ function postMessage(response) {
   };
 
   body = {
-    "bot_id" : botID,
+    "bot_id" : 4603e3d9dd1791f5386a56ada6;
     "Text" : botResponse
   };
 
-  console.log('sending ' + botResponse + ' to ' + botID);
+  console.log('sending ' + botResponse + ' to ' + 4603e3d9dd1791f5386a56ada6);
 
   botReq = HTTPS.request(options, function(res) {
       if(res.statusCode == 202) {
