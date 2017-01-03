@@ -178,7 +178,7 @@ function respond() {
     this.res.end();
   }
   
-  else if(request.text && Test.test(request.text)) {
+  else if(request.text && botRegexTest.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Fuck Me");
     this.res.end();
